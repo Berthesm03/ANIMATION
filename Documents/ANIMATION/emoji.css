@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    background-image: radial-gradient(white, orangered);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+   
+}
+.syl{
+    background-color: rgb(14, 14, 43);
+    width: 100%;
+    height: 15vh;
+   
+}
+.bert{
+    background-color: cyan;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
+}
+.cor{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    
+}
+.meum{
+   
+    position: absolute;
+   
+    margin: 1.5%;
+  
+    animation: moveForward 5s linear infinite;
+    animation-delay: 0.9s;
+
+   
+    
+}
+.meum::before,
+.meum::after{
+    content: "";
+    display: block;
+  
+    position: absolute;
+    border: solid 50px rgb(255, 0, 106);
+   
+    width: 0;
+    height: 0;
+    top: 0;
+    border-radius: 50%;
+    z-index: 1;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    animation: mouthTop 1s ease infinite;
+
+}
+.meum::after{
+    border-color: rgb(255, 0, 106);
+    border-right-color: transparent;
+    border-top-color: transparent;
+    animation: mouthBottom 1s ease infinite;
+}
+.meu{
+    position: absolute;
+    background-color:lightgreen;
+    width: 90px;
+    height: 100px;
+    margin: 20px 0 ;
+    border-radius: 50% 50% 0 0;
+    z-index: 1;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    
+    animation: moveForward 5s linear infinite, blink 0.5s linear infinite;
+}
+.meu::before,
+  .meu::after {
+    content: "";
+    position: absolute;
+    
+    height: 25px;
+    width: 20px;
+    border-radius: 100%;
+    margin: 12.5px;
+    left: 4px;
+  }
+  
+  .meu::after {
+    margin: 10px;
+  }
+.marius{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin: 20px 2px ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.beut{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   
+}
+  .A{
+
+    content: "";
+    position: absolute;
+    background: blue;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    top: 25px;
+   
+  
+    right: 30px;
+    animation: SYLBER 0.7s linear infinite;
+   
+    
+} 
+.B{
+    content: "";
+    position: absolute;
+    background: red;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    top: 25px;
+    left: 5px;
+   
+    animation: peepRight 0.7s linear infinite;
+      
+}
+.stick,
+.stick::before,
+.stick::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid 10px rgb(14, 14, 43);
+  border-top-color: transparent;
+  bottom: -6px;
+}
+
+.stick::before {
+  margin-left: 10px;
+  content: "";
+}
+
+.stick::after {
+  margin-left: 30px;
+  content: "";
+}
+
+
+.sticker{
+    background: radial-gradient(yellow, rgb(236, 236, 0.5));;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: inset 3px 0 0 4px  rgba(255, 102, 0, 0.30);
+    position: relative;
+    border:5px #FFA432;
+    top: 180px;
+    margin-left: 150px; 
+   
+    
+   
+   
+    
+}
+.oeil{
+    
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 150%;
+    position: absolute;
+    top: 70px;
+    left: 35px;
+}
+.oeil:last-child{
+        left: auto;
+        right: 40px;
+        
+}
+.oeil::after{
+    content: "";
+    width: 18px;
+    height:18px;
+    background-color: #000;
+    border-radius: 55%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: yeux 2s ease-in-out infinite;
+
+}
+.mou{
+    width: 60px;
+    height: 10px;
+    background-color: rgb(78, 51, 9);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+ .sticker2{
+    background: radial-gradient(yellow, rgb(236, 236, 0.5));;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: inset 3px 0 0 4px  rgba(255, 102, 0, 0.30);
+    position: relative;
+    border:5px #FFA432;
+    
+    top: 195px;
+    left: -70px; 
+   
+   
+    
+}
+.oeil2{
+   
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 150%;
+  position: absolute;
+  top: 60px;
+  left: 35px;
+
+}
+.oeil4{
+    
+   
+  top: 75px;
+  width: 50px;
+  height: 30px;
+  left: 30px;
+  border-radius: 50%;
+  position: absolute;
+  border:5px solid transparent;
+  border-top-color: #2a2734;
+
+}
+.oeil2:last-child{
+        left: auto;
+        right: 40px;
+        
+}
+.oeil2::after{
+    content: "";
+    width: 18px;
+    height:18px;
+    background-color: #000;
+    border-radius: 55%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+
+}
+.mou2{
+    width: 110px;
+    height: 50px;
+    background-color: #b57700;
+    border-radius: 5px;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transform: translateX(-50%);
+}
+.rouge::after{
+  height: 50px;
+  width: 50px;
+  color: rgb(222, 21, 21);
+  
+
+}
+
+.sticker3{
+    background: radial-gradient(yellow, rgb(236, 236, 0.5));;
+    width: 200px;
+    height:200px;
+    border-radius: 100px;
+    box-shadow: inset 3px 0 0 4px  rgba(255, 102, 0, 0.30);
+    position: relative;
+    border:5px #FFA432;
+    margin-left: 50%; 
+   
+    
+}
+.oeil3{
+    
+    width: 50px;
+    height: 50px;
+
+    border-radius: 150%;
+    position: absolute;
+    top: 70px;
+    left: 35px;
+}
+.oeil3:last-child{
+        left: auto;
+        right: 40px;
+        
+}
+.oeil3::after{
+  content: "";
+  width: 20px;
+  height:20px;
+  background-color: #000;
+  border-radius: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+    
+
+}
+.mou3{
+    
+    top: 140px;
+    width: 100px;
+    height: 150px;
+    left: 45px;
+    border-radius: 70%;
+    position: absolute;
+    border:5px solid transparent;
+    border-top-color: #2a2734;
+  
+}
+
+@keyframes yeux{
+  10%{
+      transform: translate(-14px,-50%);
+      top: 20%;
+      left: 60%;
+  } 
+  15%{
+      transform: translate(-14px,-10px);
+      bottom: 20%;
+      left: 60%;
+  }
+  20%,
+  100%{
+      transform: translate(-50%,-15px);
+      bottom: 20%;
+      left: 60%;
+     
+  }
+
+}
+
+ @keyframes SYLBER {
+    0%,
+    100% {
+      right: 5px;
+    }
+    50% {
+      right: 10px;
+    }
+    100% {
+        right: 30px;
+      }
+  }
+  @keyframes peepRight {
+    
+    0% {
+      left: 5px;
+    }
+    50% {
+      left: 10px;
+    }
+    100% {
+        left: 30px;
+      }
+  } 
+  @keyframes mouthTop {
+    50% {
+      transform: rotate(44deg);
+    }
+  }
+  @keyframes mouthBottom {
+    50% {
+      transform: rotate(-44deg);
+    }
+    
+  }
+  @keyframes moveForward {
+    0% {
+      left: -10%;
+    }
+    100% {
+      left: 100%;
+    }
+  } 
+  @keyframes blink {
+    50% {
+      background: orangered;
+    }
+  }

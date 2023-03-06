@@ -1,0 +1,61 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background: #181818;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+   
+
+}
+h1{
+  font-size: 4rem;
+}
+.animated {
+  border: 10px solid red;
+  width: 40%;
+  position: relative;
+  height: 20vh;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated::before {
+    
+  content: "COOL!";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f00;
+  transform: translateY(-100%);
+  transition-property: transform;
+  transition-duration: 1s;
+  
+  
+  
+}
+
+.animated:hover::before {
+ 
+  transform: translateY(0);
+}
+.rect-angle{
+    font-size: 2rem;
+    text-align: center;
+    
+}
